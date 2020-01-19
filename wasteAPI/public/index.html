@@ -1,129 +1,140 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Go Green</title>
-  <script src="https://kit.fontawesome.com/72b88f231c.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <header>
-    <h2><a href="">Waste Management</a></h2>
-    <nav>
-      <li><a href="">Dispose</a></li>
-      <li><a href="/register">Donations</a></li>
-      <li><a href="">Collectors Near Me</a></li>
-      <li id="register"><a href="/register" >Register as Collector</a></li>
-    </nav>
-  </header>
-  <section class="main">
-    <div class="background"></div>
-    <div class="maincontent">
-      <h1>Let's Get Wasted</h1>
-      <h3>Reduce, Reuse, Recycle with us</h3>
-      <a class=btn>contact us</a>
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Registration form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+      </header>
+
+
+      <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1 overlay" style="background-image: url('images/bgimage1.jpg')">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="line-bottom">Join our network of garbage collectors.</h1>
+            </div>
+            <div class="col-lg-5 ml-auto">
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <!-- <section class="part2">
-    <h3 class="title">Main content of slide 2basically</h3>
-    <p>“Sed ut perspiciatis, unde omnis iste natu
-      s error sit voluptates it
-       amet consectetur adipisci[ng]</p>
-    <hr>
-    <ul class="grid">
-      <li class="small1"></li>
-      <li class="small2"></li>
-      <li class="small3"></li>
-      <li class="small4"></li>
-    </ul>
 
-    </ul>
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pr-md-5 mr-auto">
+            <h2 class="line-bottom">Expand your business by becoming a part of this network.</h2>
+            <p>With over 1000 garbage collectors registered already, do not leave this chance to grow. The garbage disposers will contact you based on the type of garbage you collect.</p>
+          </div>
+          <div class="col-md-6">    
+            <div class="quick-contact-form bg-white">
+                <h2>Register now!</h2>
+                <form action="#" method="post" id="form_id" >
+                  <div class="form-group">
+                    <input type="text*" class="form-control" id="name" placeholder="Name">
+                  </div>
+                    
+                   <div class="form-group">
+                    <input type="tel*" class="form-control" id="contact" placeholder="Contact Number">
+                  </div>
+                    
+                    <div class="form-group">
+                    <input type="text*" class="form-control" id="address" placeholder="Address">
+                  </div>
+                    
+                   <div class="form-group">
+                    <input type="tel*" class="form-control" id="zip" placeholder="Zip code">
+                  </div>
+                    
+                  <div class="form-group">
+                    <select name="type" class="form-control" id="type">
+                        <option value="" disabled selected hidden>Type of Garbage Collected</option>
+                        <option value="biomedical">Biomedical Waste</option>
+                        <option value="chemical">Chemical Waste</option>
+                        <option value="ewaste">Electronic Waste</option>
+                        <option value="glass">Glass Waste</option>
+                        <option value="hazardous">Hazardous Waste</option>
+                        <option value="metal">Metal Waste</option>
+                        <option value="organic">Organic Waste</option>
+                        <option value="paper">Paper Waste</option>
+                        <option value="plastic">Plastic Waste</option>
+                        <option value="textile">Textile Waste</option>
+                      </select>
+                        </div>
+                    
+                  <div class="form-group">
+                      <button type="button" value="Submit" class="btn btn-primary px-5" id="btn-submit" onclick="alert('Form Submitted')">Submit</button>
+                  </div>
+                      
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </section> -->
-  <section class="part3">
-      <h3 class="title">Helping the world Go Green </h3>
-      <p class="parttext">With the growing environmental concerns, it is the need of the hour to alter our lives and contirbute towards making the Earth a better place to live.
-      </p>
-      <hr>
-      <ul class="grid">
-        <li>
-          <div class="icon">
-            <img src="assets/img/bin.png" alt="">
+<script>
+    
+    const form= {
+        name : document.getElementById('name'),
+        address: document.getElementById('address'),
+        contact: document.getElementById('contact'),
+        submit: document.getElementById('btn-submit')
+    };
+    
+    form.submit.addEventListener('click',() =>{
+        console.log('form submitted');
+        
+    });
+</script>
+            </p>
+            </div>
           </div>
-          <h4 style="color: #3895d3">Reduce</h4>
-          <p>Lorem ipsum, or lipsum as it is
-             sometimes known, is dummy text used in
-              laying out print, graphic or web designs. 
-          </p>
-        </li>
-        <li>
-          <div class="icon">
-            <img src="assets/img/electroncis.png" alt="">
-          </div>
-          <h4 style="color: #fedc56">Reuse</h4>
-          <p>Lorem ipsum, or lipsum as it is
-             sometimes known, is dummy text used in
-              laying out print, graphic or web designs. 
-          </p>
-        </li>
-        <li>
-          <div class="icon">
-            <img src="assets/img/leaf.png" alt="">
-          </div>
-          <h4 style="color: #00a572">Recycle</h4>
-          <p>Lorem ipsum, or lipsum as it is
-             sometimes known, is dummy text used in
-              laying out print, graphic or web designs. 
-          </p>
-        </li>
-        <!-- <li>
-            <i class="fas fa-flag-checkered fa-4x"></i>
-            <h4>racing trips</h4>
-            <p>Lorem ipsum, or lipsum as it is
-                sometimes known, is dummy text used in
-                 laying out print, graphic or web designs. 
-             </p>
-        </li> -->
-      </ul>
-  </section>
-  <section class="part4">
-      <h3 class="title">OUR VISION</h3>
-      <hr>
-      <p class="quote">Lorem ipsum, or lipsum as it is
-          sometimes known, is dummy text used in
-           laying out print, graphic or web designs. </p>
-      <p class="person">--person 1</p>
-      <p class="quote">Lorem ipsum, or lipsum as it is
-          sometimes known, is dummy text used in
-           laying out print, graphic or web designs. </p>
-      <p class="person">--person 2</p>
-      <p class="quote">Lorem ipsum, or lipsum as it is
-          sometimes known, is dummy text used in
-           laying out print, graphic or web designs. </p>
-      <p class="person">--person 3</p>
 
-  </section>
-  <section class="contact">
-      <h3 class="title">Suggestions are welcome</h3><!-- 
-      <p>Send us your suggestions to improve</p>
- -->      <hr>
-      <form>
-        <input type="text" placeholder="Message">
-        <a class="btn">send</a>
-      </form>
-  </section>
-  <footer>
-    <p>let's get wasted</p>
-    <ul>
-      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    </ul>
-  </footer>
-  <!-- <script src="./assets/js/main.js"></script> -->
-</body>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
 </html>
+
