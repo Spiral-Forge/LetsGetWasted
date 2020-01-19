@@ -6,7 +6,47 @@ html{
   	background-size: cover;
   	height:100%;
 }
+nav{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:rgb(0, 0, 0);
+	cursor: pointer;
+}
+li a:hover{
+	opacity: 1;
+	color: #77dd77;
+	font-weight: bold;
+}
 
+header{
+	/*position: absolute;*/
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255,255,255,0.6);
+	align-items: center;
+	padding: 35px 100px 15px;
+	/*opacity: 0;*/
+	animation: 1s fadein 0.5s forwards;
+}
+h2{
+	font-family: "Quicksand",sans-serif;
+}
+nav{
+	display: flex;
+	margin-right: -15px;
+}
+li a{
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0px 20px;
+	cursor: pointer;
+}
+ul li{
+	list-style: none;
+}
 #feedback-page{
 	text-align:center;
 }
@@ -176,6 +216,24 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (max-width: 450px) {
+	header{
+		padding: 20px 50px;
+		flex-direction: column;
+	}
+	header h2{
+		margin-bottom: 15px;
+	}
+
+	header nav li{
+		font-size: 12px;
+		padding: 6px;
+		width: 80px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	#form-div{
 		left: 3%;
 		margin-right: 3%;
