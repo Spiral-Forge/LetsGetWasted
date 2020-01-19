@@ -23,7 +23,7 @@ function connect(){
 
 app.use(bodyParser.json())
 app.use('/',express.static('public'))
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/',function(req,res){
     res.send("hello world");
@@ -40,13 +40,10 @@ app.get('/register',(req,res)=>{
     res.redirect('/register.html');
 })
 
-app.get('/nearme',(req,res)=>{
-    res.redirect('/nearme.html');
+app.get('/funfacts',(req,res)=>{
+    res.redirect('/funfacts.html');
 })
 
-app.get('/register',(req,res)=>{
-    res.redirect('/register.html');
-})
 
 app.get('/dispose',(req,res)=>{
     res.redirect('/dispose.html');
@@ -56,10 +53,22 @@ app.get('/contact',(req,res)=>{
     res.redirect('/contact.html');
 })
 
-app.get('/getgc',(req,res)=>{
+app.post('/getgc',(req,res)=>{
     var data="Paper_Waste";
     getd(data,function(d){
         console.log(d);
+        res.sendStatus(200);
+    })
+})
+
+app.post('/registergc',(req,res)=>{
+    //console.log(req.body)
+    var wastetype=req.body.type
+    //console.log(wastetype)
+    let {type, ...form} = req.body;
+    //console.log(form)
+    putdata(wastetype,form,(d)=>{
+        //console.log(d);
         res.sendStatus(200);
     })
 })
@@ -71,6 +80,14 @@ function getd(data,cb){
         //console.log(result);
         cb(result)
   });
+}
+
+function putdata(w,f,cb){
+    let collection=db.collection(w);
+    collection.insert(f,(err,result)=>{
+        if (err) throw err;
+        cb(result)
+    })
 }
 
 

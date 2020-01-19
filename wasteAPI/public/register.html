@@ -45,39 +45,39 @@
                 <h2>Register now!</h2>
                 <form action="#" method="post" id="form_id" >
                   <div class="form-group">
-                    <input type="text*" class="form-control" id="name" placeholder="Name">
+                    <input type="text" class="form-control" id="name" placeholder="Name" name="Name" required>
                   </div>
                     
                    <div class="form-group">
-                    <input type="tel*" class="form-control" id="contact" placeholder="Contact Number">
+                    <input type="text" class="form-control" id="contact" placeholder="Contact Number" name="Contact" required>
                   </div>
                     
                     <div class="form-group">
-                    <input type="text*" class="form-control" id="address" placeholder="Address">
+                    <input type="text" class="form-control" id="address" placeholder="Address" name="Address" required>
                   </div>
                     
                    <div class="form-group">
-                    <input type="tel*" class="form-control" id="zip" placeholder="Zip code">
+                    <input type="number" class="form-control" id="zip" placeholder="Zip code" name="ZIP" required>
                   </div>
                     
                   <div class="form-group">
-                    <select name="type" class="form-control" id="type">
+                    <select name="type" class="form-control" id="type" name="waste" required>
                         <option value="" disabled selected hidden>Type of Garbage Collected</option>
-                        <option value="biomedical">Biomedical Waste</option>
-                        <option value="chemical">Chemical Waste</option>
-                        <option value="ewaste">Electronic Waste</option>
-                        <option value="glass">Glass Waste</option>
-                        <option value="hazardous">Hazardous Waste</option>
-                        <option value="metal">Metal Waste</option>
-                        <option value="organic">Organic Waste</option>
-                        <option value="paper">Paper Waste</option>
-                        <option value="plastic">Plastic Waste</option>
-                        <option value="textile">Textile Waste</option>
+                        <option value="Biomedical_Waste">Biomedical Waste</option>
+                        <option value="Chemical_Waste">Chemical Waste</option>
+                        <option value="Ewaste">Electronic Waste</option>
+                        <option value="Glass_Waste">Glass Waste</option>
+                        <option value="Hazardous_Waste">Hazardous Waste</option>
+                        <option value="Metal_Waste">Metal Waste</option>
+                        <option value="Organic_Waste">Organic Waste</option>
+                        <option value="Paper_Waste">Paper Waste</option>
+                        <option value="Plastic_Waste">Plastic Waste</option>
+                        <option value="Textile_Waste">Textile Waste</option>
                       </select>
                         </div>
                     
                   <div class="form-group">
-                      <button type="button" value="Submit" class="btn btn-primary px-5" id="btn-submit" onclick="alert('Form Submitted')">Submit</button>
+                      <button type="button" value="Submit" class="btn btn-primary px-5" id="btn-submit" >Submit</button>
                   </div>
                       
                 </form>
@@ -86,7 +86,7 @@
         </div>
       </div>
     </div>
-
+    <script src="./assets/js/register.js"></script>
   </body>
 
 </html>
