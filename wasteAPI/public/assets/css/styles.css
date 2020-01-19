@@ -199,7 +199,11 @@ img
 	line-height: 1.5;
 	margin:40px 0 25px;
 }
-
+#chaticon{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
 form{
 	display: flex;
 	align-items: center;

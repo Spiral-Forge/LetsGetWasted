@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-<meta name ="viewport" content ="width=device-width,intial-scale=1">
+    <meta charset="utf-8">
+    <meta name ="viewport" content ="width=device-width,intial-scale=1">
     <link rel="stylesheet" href="assets/css/disposestyle.css"> 
-<div id="form-main">
-  <div id="form-div">
-    <form class="form" id="form1">
-      <p class="name">
-        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-      </p>
-      <select id="TYPE OF WASTE" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputmaterial" id="type">
-        <option value="hide">-- TYPE OF WASTE --</option>
-        <option value="Biomedical_Waste">Biomedical Waste</option>
-        <option value="Chemical_Waste">Chemical Waste</option>
-        <option value="Ewaste" rel="icon-temperature">E-Waste</option>
-        <option value="Glass_Waste">Glass</option>
-        <option value="Hazardous_Waste">Hazardous Waste</option>
-        <option value="Metal_Waste">Metal</option>
-        <option value="Organic_Waste">Organic Waste</option>
-        <option value="Paper_Waste">Paper</option>
-        <option value="Plastic_Waste">Plastic</option>
-        <option value="Textile_Waste">Textile</option>
+</head>
+<body>
+  <<!-- header>
+    <h2><a href="">Waste Management</a></h2>
+    <nav>
+      <li><a href="/dispose">Dispose</a></li>
+      <li><a href="">Donations</a></li>
+      <li><a href="/register">Register as Collector</a></li>
+      <li><a href="/funfacts">Fun Facts</a></li>
+    </nav>
+  </header> -->
+  <div id="form-main">
+    <div id="form-div">
+      <form class="form" id="form1">
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        </p>
+        <select id="TYPE OF WASTE" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input inputmaterial" id="type">
+          <option value="hide">-- TYPE OF WASTE --</option>
+          <option value="Biomedical_Waste">Biomedical Waste</option>
+          <option value="Chemical_Waste">Chemical Waste</option>
+          <option value="Ewaste" rel="icon-temperature">E-Waste</option>
+          <option value="Glass_Waste">Glass</option>
+          <option value="Hazardous_Waste">Hazardous Waste</option>
+          <option value="Metal_Waste">Metal</option>
+          <option value="Organic_Waste">Organic Waste</option>
+          <option value="Paper_Waste">Paper</option>
+          <option value="Plastic_Waste">Plastic</option>
+          <option value="Textile_Waste">Textile</option>
         <!-- <option value="ceramic waste">ceramic waste</option>
         <option value="wood">wood</option> -->
-      </select> 
+        </select> 
       
-      <div class="submit">
-        <input type="submit" value="SEND" id="button-blue">
-        <div class="ease"></div>
-        <p class="text">
-          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Garbage Collector Information"></textarea>
-        </p>
-      </div>
-    </form>
+        <div class="submit">
+          <input type="submit" value="SEND" id="button-blue">
+          <div class="ease"></div>
+          <p class="text">
+            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Garbage Collector Information"></textarea>
+          </p>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
-</head>
+</body>
 </html>
