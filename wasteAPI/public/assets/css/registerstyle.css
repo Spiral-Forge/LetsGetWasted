@@ -178,14 +178,53 @@ html {
 
 body {
   line-height: 1.7;
-  color: #364d59 !important;
+  color: #364d59;
   font-weight: 300;
   font-size: 1rem; }
 
       
+nav{
+  list-style: none;
+}
 
 
+header{/*
+  position: absolute;*/
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: url('assets/img/art.jpg');
+  align-items: center;
+  padding: 35px 100px 15px;
+ /* opacity: 0;*/
+  animation: 1s fadein 0.5s forwards;
+}
 
+a{
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+}
+li a:hover{
+  opacity: 1;
+  color: #fb7400;
+  font-weight: bold;
+}
+
+nav{
+  display: flex;
+  margin-right: -15px;
+}
+/*li{
+  margin: 0 15px;
+}*/
+li a{
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0px 20px;
+  cursor: pointer;
+}
 
 .site-mobile-menu {
   width: 300px;
@@ -549,4 +588,23 @@ form .form-control {
     box-shadow: none; }
 
 
+@media (max-width:1000px){
+  header{
+    padding: 20px 50px;
+    flex-direction: column;
+  }
+  header h2{
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
 
+  header nav li{
+    font-size: 12px;
+    padding: 6px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
