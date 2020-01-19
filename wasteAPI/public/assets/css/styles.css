@@ -17,9 +17,12 @@ a{
 	color:rgb(0, 0, 0);
 	cursor: pointer;
 }
-a:hover{
+li a:hover{
 	opacity: 1;
+	color: #77dd77;
+	font-weight: bold;
 }
+
 header{
 	position: absolute;
 	width: 100%;
@@ -33,7 +36,6 @@ header{
 }
 h2{
 	font-family: "Quicksand",sans-serif;
-	color: black;
 }
 section{
 	display: flex;
@@ -48,12 +50,13 @@ nav{
 	display: flex;
 	margin-right: -15px;
 }
-li{
+/*li{
 	margin: 0 15px;
-}
+}*/
 li a{
 	color: black;
-	font-family: 'Bitter', serif;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 0px 20px;
 	cursor: pointer;
 }
 .btn{
@@ -62,7 +65,10 @@ li a{
 	border-radius: 4px;
 	text-align: center;
 	background-color: #77dd77;
-
+}
+.btn:hover{
+	background-color: rgba(0,0,0);
+	color: #77dd77;
 }
 
 @keyframes fadein{
@@ -112,7 +118,7 @@ h3{
 		margin-top: 0px;
 	}
 }
-.small1{
+/*.small1{
 	background-image: url("../img/mountain1.jpg");
 	flex-basis:30%;
 }
@@ -127,7 +133,7 @@ h3{
 .small4{
 	background-image: url("../img/mountain4.jpg");
 	flex-basis:30%;
-}
+}*/
 .grid{
 	width:100%;
 	display: flex;
@@ -143,7 +149,7 @@ hr{
 }
 .title{
 	text-transform: capitalize;
-	font:bold 32px "Opne Sans",sans-serif;
+	font:bold 32px "Open Sans",sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
 }
@@ -233,21 +239,32 @@ footer p{
 	align-self: center;
 }
 
-@media (max-width:600px){
+@media (max-width:1000px){
 	section{
 		padding:50px 20px;
 	}
 	header{
-		padding: 15px 40px;
+		padding: 20px 50px;
 		flex-direction: column;
 	}
 	header h2{
 		margin-bottom: 15px;
 	}
-	.main{
+
+	header nav li{
+		font-size: 12px;
+		padding: 6px;
+		width: 80px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/*.main{
 		min-height: 600px;
 
-	}
+	}*/
 	.main h1{
 		font-size: 40px;/*
 		padding: 15px 0px;*/
