@@ -1,11 +1,9 @@
-console.log("in js")
+var msg=document.getElementById("fake-msg")
+msg.addEventListener("click",()=>{
+    var fi=document.getElementById("fake-input")
+    fi.value="";
+    alert("Thank you for your feedback")
 
-
-var register=document.getElementById("register")
-register.addEventListener("click",()=>{
-    window.location.href = "/register";
 })
-
-
 
 

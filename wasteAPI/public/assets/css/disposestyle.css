@@ -1,41 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-
-body{
+html{    
 	background-image: url(../img/trash.jpg);
-	background-size: cover;
+	background-repeat: no-repeat;
+  	background-size: cover;
   	height:100%;
 }
-nav{
-	list-style: none;
-	display: flex;
-	margin-right: -15px;
-	width: 100vw;
-}
-a{
-	text-decoration: none;
-	color:rgb(0, 0, 0);
-	cursor: pointer;
-}
-li a:hover{
-	opacity: 1;
-	color: #77dd77;
-	font-weight: bold;
-}
-h2{
-	font-family: "Quicksand",sans-serif;
-}
 
-header{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	background-color: rgba(255,255,255,0.6);
-	align-items: center;
-	padding: 35px 100px 15px;
-	opacity: 0;
-	animation: 1s fadein 0.5s forwards;
-}
 #feedback-page{
 	text-align:center;
 }
@@ -48,15 +19,15 @@ header{
 
 #form-div {
 	background-color:rgba(72,72,72,0.4);
-	padding:35px;/*
+	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
-	padding-bottom:50px;*/
+	padding-bottom:50px;
 	width: 450px;
 	float: left;
 	left: 50%;
 	position: absolute;
-    margin-top:30px;
+  margin-top:30px;
 	margin-left: -260px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -64,22 +35,32 @@ header{
 
 .feedback-input {
 	color:#3c3c3c;
-	font:normal 18px "Open Sans",sans-serif;
-	/*font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
   	font-weight:500;
-	font-size: 18px;*/
+	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
 	height: 50px;
 	background-color: #fbfbfb;
 	padding: 13px 13px 13px 54px;
-	margin-bottom: 20px;
+
+	    margin-bottom: 39px;
 	width:100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  	border: 3px solid rgba(0,0,0,0);
+  border: 3px solid rgba(0,0,0,0);
+}
+
+
+
+.beforedisp{
+	display: none;
+}
+.afterdisp{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .feedback-input:focus{
@@ -88,7 +69,7 @@ header{
 	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
-  	padding: 13px 13px 13px 54px;
+  padding: 13px 13px 13px 54px;
 }
 
 .focused{
@@ -99,14 +80,14 @@ header{
 /* Icons ---------------------------------- */
 #name{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #name:focus{
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
 	background-position: 8px 5px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -114,27 +95,27 @@ header{
 
 #type{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #type{	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 
 }
 #type:focus{
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #comment{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 26px 26px;
+	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
@@ -152,23 +133,25 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-	font:normal 15px "Open Sans",sans-serif;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
-	border: #fbfbfb solid 2px;
+	border: #fbfbfb solid 4px;
 	cursor:pointer;
 	background-color: #3498db;
 	color:white;
-	padding: 7px 46px 7px 46px;
+	font-size:24px;
+	padding: 20px 46px;
+	padding-bottom:22px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
- 	margin-top:24px;
-  	font-weight:bold;
+ 	 margin-top:-4px;
+  	font-weight:700;
 }
 
 #button-blue:hover{
-	background-color: white;
+	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
 	
@@ -179,17 +162,18 @@ input:focus, textarea:focus {
 .ease {
 	width: 0px;
 	height: 74px;
+	background-color: #fbfbfb;
 	-webkit-transition: .3s ease;
 	-moz-transition: .3s ease;
 	-o-transition: .3s ease;
 	-ms-transition: .3s ease;
 	transition: .3s ease;
 }
-/*
+
 .submit:hover .ease{
   width:100%;
   background-color:white;
-}*/
+}
 
 @media only screen and (max-width: 450px) {
 	#form-div{

@@ -54,10 +54,11 @@ app.get('/contact',(req,res)=>{
 })
 
 app.post('/getgc',(req,res)=>{
-    var data="Paper_Waste";
-    getd(data,function(d){
-        console.log(d);
-        res.sendStatus(200);
+    //var data="Paper_Waste";
+    console.log(req.body)
+    getd(req.body.type,function(d){
+        //console.log(d);
+        res.json(d)
     })
 })
 

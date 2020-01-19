@@ -559,7 +559,7 @@ li a{
 .quick-contact-form {
   padding: 50px;
   border-radius: 7px;
-  margin-top: -200px;
+  /*margin-top: -200px;*/
   -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1); }
   .quick-contact-form h2 {
