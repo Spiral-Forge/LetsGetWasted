@@ -3,6 +3,11 @@
 html{
 	max-width: 100%;
 }
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 body{
 	background-image: url(../img/trash.jpg);
 	background-size: cover;
@@ -24,23 +29,28 @@ nav{
 	/* width: 100vw; */
 	display: flex;
 	right: 0;
+	text-align: center;
+}
+nav li{
+	display: inline-block;
 }
 a{
 	text-decoration: none;
 	color:rgb(0, 0, 0);
 	cursor: pointer;
+	display: block;/*
+	align-content: center;*/
+	/*
+	text-align: center;*/
 }
 li a:hover{
 	opacity: 1;
-	color: #77dd77;
+	color: #3498db;
 	font-weight: bold;
 }
 h2{
-	font-family: "Quicksand",sans-serif;
-	width:60%;
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-left: 50px;
+	font: bold 1.5em "Quicksand",sans-serif;/*
+	margin-left: 50px;*/
 }
 
 header{
@@ -48,8 +58,8 @@ header{
 	display: flex;
 	justify-content: space-between;
 	background-color: rgba(255,255,255,0.6);
-	align-items: center;/*
-	padding: 35px 100px 15px;*/
+	align-items: center;
+	padding: 35px 100px 15px;
 	/*opacity: 0;*/
 	animation: 1s fadein 0.5s forwards;
 }
@@ -59,8 +69,10 @@ nav{
 li a{
 	color: black;
 	font-family: 'Josefin Sans', sans-serif;
-	padding: 0px 15px;
+	padding: 0px 20px;
 	cursor: pointer;
+	align-content: center;
+	text-align: center;
 }
 ul li{
 	list-style: none;
@@ -73,15 +85,6 @@ ul li{
 	width:100%;
 	float:left;
 	padding-top:0px;
-}
-
-.stylecomment li{
-	text-align: center;
-	margin-left: 14vw
-}
-.stylecomment {
-	text-align: center;
-	margin-right: 15%;
 }
 
 #form-div {
@@ -176,20 +179,52 @@ ul li{
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
-
-.collector{
-	background-color:rgba(72,72,72,0.4);
-	color: white;
-	padding:30px;/*
+.stylecomment{/*
+	background-color:rgba(72,72,72,0.4);*/
+	padding:35px;/*
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;*/
-	width: 400px;
-	float: left;
-	left: 50%;
+	width: 450px;
+	text-align: center;
+	align-content: center;/*
+	float: left;*//*
+	left: 50%;*/
     margin-top:30px;
+}
+.stylecomment li{
+	text-align: center;
+}
+.stylecomment {
+	text-align: center;
+	margin-right: 15%;
+	margin-left: 30%;
+}
+.collector{
+	background-color:rgba(72,72,72,0.4);
+	color: white;
+	padding:15px;/*
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;*/
+	width: 450px;
+	/*float: left;
+	left: 50%;
+    margin-top:10px;*/
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+}
+
+.cname{
+	font:bold 14px "Josefin Sans",sans-serif;
+	margin-bottom: 5px;
+}
+.cadd{
+	font: 14px 'Open Sans', sans-serif;
+	margin-bottom: 2px;
+}
+.ccontact{
+	font: 14px 'Open Sans', sans-serif;
 }
 
 

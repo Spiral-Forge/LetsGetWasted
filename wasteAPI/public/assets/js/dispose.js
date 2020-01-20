@@ -44,8 +44,13 @@ submit.addEventListener("click",()=>{
             ul.classList.add("collector");
 
             li1.appendChild(t1)
-             li2.appendChild(t2)
-              li3.appendChild(t3)
+            li2.appendChild(t2)
+            li3.appendChild(t3)
+
+            li1.classList.add("cname")
+            li2.classList.add("cadd")
+            li3.classList.add("ccontact")
+
             ul.appendChild(li1)
             ul.appendChild(li2)
             ul.appendChild(li3)

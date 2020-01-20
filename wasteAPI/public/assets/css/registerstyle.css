@@ -182,6 +182,12 @@ html {
 .border-w-5 {
   border-width: 5px; }
 
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body {
   line-height: 1.7;
   color: #364d59;
@@ -232,7 +238,9 @@ li a{
   padding: 0px 20px;
   cursor: pointer;
 }
-
+header h2{
+  font: bold 1.5em "Quicksand",sans-serif;
+}
 .site-mobile-menu {
   width: 300px;
   position: fixed;

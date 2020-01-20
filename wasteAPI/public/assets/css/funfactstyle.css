@@ -15,48 +15,54 @@ body{
 font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
 
 
-nav{
-  list-style: none;
+body {
+  line-height: 1.7;
+  color: #364d59;
+  font-weight: 300;
+  font-size: 1rem; 
 }
+
+header{/*
+  position: absolute;*/
+  width: 100%;
+  display: flex;
+  justify-content: space-between;/*
+  background-image: url('../img/art.jpg');*/
+  background: rgba(255,255,255,0.6);
+  align-items: center;
+  padding: 35px 100px 15px;
+ /* opacity: 0;*/
+  animation: 1s fadein 0.5s forwards;
+}
+
 a{
   text-decoration: none;
   color:rgb(0, 0, 0);
   cursor: pointer;
+  display: block;
 }
 li a:hover{
   opacity: 1;
-  color: #6eb8b6;
+  color: #fb7400;
   font-weight: bold;
-}
-
-header{
-/*   position: absolute; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255,255,255,0.6);
-  align-items: center;
-  padding: 35px 100px 15px;
-/*   opacity: 0; */
-  animation: 1s fadein 0.5s forwards;
-}
-h2{
-  font-family: "Quicksand",sans-serif;
 }
 
 nav{
   display: flex;
   margin-right: -15px;
+  list-style: none;
 }
-/*li{
-  margin: 0 15px;
-}*/
 li a{
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   padding: 0px 20px;
   cursor: pointer;
 }
+header h2{
+  font: bold 1.5em "Quicksand",sans-serif;
+}
+
+
 
 h1{
   color: #6eb8b6;
