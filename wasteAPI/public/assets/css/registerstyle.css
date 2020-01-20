@@ -1,6 +1,12 @@
 /* Base */
 html {
   overflow-x: hidden; }
+.bg{
+  background-image: url('../img/bgimage1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+}
 
 .font-size-10 {
   font-size: 10px; }
@@ -192,8 +198,9 @@ header{/*
   position: absolute;*/
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-image: url('assets/img/art.jpg');
+  justify-content: space-between;/*
+  background-image: url('../img/art.jpg');*/
+  background: rgba(255,255,255,0.6);
   align-items: center;
   padding: 35px 100px 15px;
  /* opacity: 0;*/

@@ -28,26 +28,29 @@ submit.addEventListener("click",()=>{
         var data=JSON.parse(abc);
         console.log(data)
         var textarea=document.getElementById("comment")
+        var mainform=document.getElementById("form-div")
+        mainform.classList.add("beforedisp")
         textarea.classList.add("afterdisp");
+        console.log(textarea)
         for(var i=0;i<data.length;i++){
-            var p1=document.createElement("p")
+            var ul=document.createElement("ul")
+            var li1=document.createElement("li")
+            var li2=document.createElement("li")
+            var li3=document.createElement("li")
             var br=document.createElement("br")
-            var p2=document.createElement("p")
-            var p3=document.createElement("p")
-            var p4=document.createElement("p")
             var t1=document.createTextNode(data[i].Name)
             var t2=document.createTextNode(data[i].Address)
             var t3=document.createTextNode(data[i].Contact)
-            var t4=document.createTextNode(data[i].ZIP)
-            p1.appendChild(t1)
-            p2.appendChild(t2)
-            p3.appendChild(t3)
-            p4.appendChild(t4)
-            textarea.append(p1)
-            textarea.append(p2)
-            textarea.append(p3)
-            textarea.append(p4)
-            textarea.append(br)
+            ul.classList.add("collector");
+
+            li1.appendChild(t1)
+             li2.appendChild(t2)
+              li3.appendChild(t3)
+            ul.appendChild(li1)
+            ul.appendChild(li2)
+            ul.appendChild(li3)
+            console.log(ul)
+            textarea.appendChild(ul);
         }
 
 

@@ -32,7 +32,7 @@ app.get('/',function(req,res){
 // app.use('/api',changeendpoints)
 
 app.listen(8080,()=>{
-    console.log("server running on 5000");
+    console.log("server running on 8080");
     connect();
 })
 
@@ -85,7 +85,7 @@ function getd(data,cb){
 
 function putdata(w,f,cb){
     let collection=db.collection(w);
-    collection.insert(f,(err,result)=>{
+    collection.insertOne(f,(err,result)=>{
         if (err) throw err;
         cb(result)
     })
