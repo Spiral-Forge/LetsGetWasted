@@ -26,6 +26,9 @@ submit.addEventListener("click",()=>{
       })
       pr.then(function display(abc){
         alert(`Congratulations ${namep}! You have successfully registered.`)
+	for(var i=0;i<formData.elements.length;i++){
+        	formData[i].value="";
+    	}
         console.log("HELLO....")
     });
 })
