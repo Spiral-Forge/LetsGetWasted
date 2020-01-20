@@ -21,7 +21,7 @@ nav{
 	list-style: none;/*
 	display: flex;*//*
 	margin-right: -15px;*/
-	width: 100vw;
+	/* width: 100vw; */
 	display: flex;
 	right: 0;
 }
@@ -40,6 +40,7 @@ h2{
 	width:60%;
 	font-size: 1.5em;
 	font-weight: bold;
+	margin-left: 50px;
 }
 
 header{
@@ -53,7 +54,7 @@ header{
 	animation: 1s fadein 0.5s forwards;
 }
 nav{
-	
+	margin-right: 20px;
 }
 li a{
 	color: black;
@@ -72,6 +73,15 @@ ul li{
 	width:100%;
 	float:left;
 	padding-top:0px;
+}
+
+.stylecomment li{
+	text-align: center;
+	margin-left: 14vw
+}
+.stylecomment {
+	text-align: center;
+	margin-right: 15%;
 }
 
 #form-div {
