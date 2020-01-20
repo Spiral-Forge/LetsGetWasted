@@ -222,6 +222,10 @@ form{
 	color:#555;
 	flex:1;
 }
+.icon img{
+	height: 100px;
+	width:100px;
+}
 footer{
 	display: flex;
 	align-items: center;

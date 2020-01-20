@@ -49,6 +49,10 @@ app.get('/dispose',(req,res)=>{
     res.redirect('/dispose.html');
 })
 
+app.get('/don',(req,res)=>{
+    res.redirect('/donate.html');
+})
+
 app.get('/contact',(req,res)=>{
     res.redirect('/contact.html');
 })
