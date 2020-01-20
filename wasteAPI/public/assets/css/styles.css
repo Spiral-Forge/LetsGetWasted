@@ -189,9 +189,10 @@ ul li{
 	color:#8c9eff;
 	margin: 25px 0px;
 }
-img
+	img
 {
-	width:40%;
+	width:10%;
+	height: 16%
 }
 .part4 .quote{
 	font-size: 22px;
@@ -265,6 +266,12 @@ footer p{
 		align-items: center;
 		justify-content: center;
 	}
+
+	img {
+    width: 14%;
+    height: 10%;
+}
+
 
 	/*.main{
 		min-height: 600px;
