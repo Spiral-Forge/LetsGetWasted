@@ -112,8 +112,8 @@ h3{
 	color: rgb(215,203, 206);
 }
 .btn:hover{
-	background-color: rgba(0,0,0);
-	color: #77dd77;
+	background-color: white;
+	color: rgb(46, 139, 87);
 }
 
 .maincontent{
