@@ -15,7 +15,7 @@ a{color:inherit;text-decoration:none}
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url(assets/img/art.jpg) no-repeat center;
+	background:url(../img/trash.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
@@ -138,6 +138,12 @@ a{color:inherit;text-decoration:none}
 }
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
 	transform:rotate(0);
+}
+
+#success{
+	color: white;
+	font:normal 15px 'Quicksand',sans-serif;
+	text-align: center;
 }
 
 .hr{
