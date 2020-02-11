@@ -2,7 +2,6 @@ var form=document.getElementById("form1")
 var submit=document.getElementById("button-blue")
 
 submit.addEventListener("click",()=>{
-
     // var reqbody={}
     // for(var i=0;i<form.elements.length;i++){
     //     reqbody[form[i].name]=form[i].value
@@ -57,8 +56,5 @@ submit.addEventListener("click",()=>{
             console.log(ul)
             textarea.appendChild(ul);
         }
-
-
-
     });
 })
