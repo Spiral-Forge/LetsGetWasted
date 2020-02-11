@@ -50,7 +50,7 @@ app.get('/dispose',(req,res)=>{
 })
 
 app.get('/don',(req,res)=>{
-    res.redirect('/donate.html');
+    res.redirect('/donater.html');
 })
 
 app.get('/contact',(req,res)=>{
@@ -78,13 +78,66 @@ app.post('/registergc',(req,res)=>{
     })
 })
 
+app.post('/dentry',(req,res)=>{
+    //console.log(req.body)
+    // var {item,qty,contact,desc}=req.body
+    //console.log(wastetype)
+    // console.log(req.body)
+    donateEntry(req.body,(result)=>{
+        console.log(result);
+        res.json(result[0]);
+    })
+})
+
+app.post('/dupdate',(req,res)=>{
+    var {id}=req.body;
+    update(id,req.body,(d)=>{
+        res.sendStatus(200);
+    })
+})
+
+app.post('/dget',(req,res)=>{
+    //console.log(req.body)
+    var {id}=req.body
+    //console.log(wastetype)
+    // console.log(req.body)
+    getDonateEntry(id,(result)=>{
+       res.json(result[0])
+    })
+})
+
+function update(id,body,cb){
+    var collection=db.collection("Donate");
+    collection.update({id:id},body, function(err, result) {
+        if (err) throw err;
+        cb(result)
+    })
+}
+
 function getd(data,cb){
     let collection=db.collection(data);
-    collection.find().toArray(function(err, result) {
+    collection.updateOne(function(err, result) {
         if (err) throw err;
         //console.log(result);
         cb(result)
   });
+}
+
+function getDonateEntry(id,cb){
+    let collection=db.collection("Donate");
+    collection.find({ id:id }).toArray(function(err, result) {
+        if (err) throw err;
+        // console.log(result);
+        cb(result)
+  });
+}
+
+function donateEntry(body,cb){
+    let collection=db.collection("Donate");
+    collection.insertOne(body,(err,result)=>{
+        if (err) throw err;
+        cb(result)
+    })
 }
 
 function putdata(w,f,cb){
