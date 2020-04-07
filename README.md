@@ -28,7 +28,7 @@ node index.js
 
 ```
 
-4. Go to localhost:5000 to see the application in action.
+4. Go to localhost:8080 to see the application in action.
 
 ---
 
