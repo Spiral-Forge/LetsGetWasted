@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"contacts.Metal_Waste"}],"uuid":"7357ae1f58f341bcaf6412dad154d1d0"}

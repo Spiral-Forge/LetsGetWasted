@@ -33,9 +33,10 @@ sub.addEventListener("click",()=>{
 	})
 	pr.then((d)=>{
 		// console.log(d);
-		// var p=document.getElementById("newid");
-		// var t1=document.createTextNode("Your donation id is:" +id)
-		// p.append(t1)
+		var p=document.getElementById("newid");
+		var text="Your donation id is: " +id
+		var t1=document.createTextNode(text )
+		p.append(t1)
 		console.log(id);
 		document.getElementById("user").value="";
 		document.getElementById("qty").value="";

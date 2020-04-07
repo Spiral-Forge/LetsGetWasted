@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"contacts.Paper_Waste"}],"uuid":"dba73fcef6534f0c8464a517f6d2054d"}

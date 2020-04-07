@@ -24,6 +24,7 @@ submit.addEventListener("click",()=>{
           return res.text();
       })
       pr.then(function display(abc){
+
         var data=JSON.parse(abc);
         console.log(data)
         var textarea=document.getElementById("comment")
