@@ -1,6 +1,6 @@
 # Let's Get Wasted
 
-This website will allow you to practice the 3R's of Waste Management in one place. Our website 
+With this website, we aim to create a network of waste collectors to make them more accessible to the general public and speed up the process of Waste Disposal. 
 
 ## Prerequisites
 
